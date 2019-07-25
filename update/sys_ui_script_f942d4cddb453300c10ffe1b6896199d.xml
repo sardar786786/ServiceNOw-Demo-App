@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Creating a Sample mobile app Servicenow</description>
+        <global>false</global>
+        <name>x_271080_demo_mobi.Mobile App</name>
+        <script><![CDATA[angular.module('angularapp',[]);
+angular.module('angularapp').controller('angularappctrl',function($scope){
+	$scope.myvar='';
+	$scope.i=0;
+	$scope.clearTxt=function(){
+	$scope.myvar='';
+    $scope.i++;
+		alert("My Var Value is cleared"+$scope.i+"Times By"+g_user.userName);
+	};
+	
+	
+});]]></script>
+        <script_name>Mobile App</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 12:01:44</sys_created_on>
+        <sys_id>f942d4cddb453300c10ffe1b6896199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_271080_demo_mobi.Mobile App</sys_name>
+        <sys_package display_value="Demo_Mobile_Application" source="x_271080_demo_mobi">a7038889db053300c10ffe1b68961946</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo_Mobile_Application">a7038889db053300c10ffe1b68961946</sys_scope>
+        <sys_update_name>sys_ui_script_f942d4cddb453300c10ffe1b6896199d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 12:01:44</sys_updated_on>
+        <ui_type>10</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>
